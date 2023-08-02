@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Awards</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!--  cdn font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css file -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+  .site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+  }
+
+  .site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+  }
+
+  .site-footer hr.small {
+    margin: 20px 0
+  }
+
+  .site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+  }
+
+  .site-footer a {
+    color: #737373;
+  }
+
+  .site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+  }
+
+  .footer-links {
+    padding-left: 0;
+    list-style: none
+  }
+
+  .footer-links li {
+    display: block
+  }
+
+  .footer-links a {
+    color: #737373
+  }
+
+  .footer-links a:active,
+  .footer-links a:focus,
+  .footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+  }
+
+  .footer-links.inline li {
+    display: inline-block
+  }
+
+  .site-footer .social-icons {
+    text-align: right
+  }
+
+  .site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+  }
+
+  .copyright-text {
+    margin: 0
+  }
+
+  @media (max-width:991px) {
+    .site-footer [class^=col-] {
+      margin-bottom: 30px
+    }
+  }
+
+  @media (max-width:767px) {
+    .site-footer {
+      padding-bottom: 0
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+      text-align: center
+    }
+  }
+
+  .social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+  }
+
+  .social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+  }
+
+  .social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+  }
+
+  .social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+  }
+
+  .social-icons a:active,
+  .social-icons a:focus,
+  .social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+  }
+
+  .social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+  }
+
+  .social-icons a.facebook:hover {
+    background-color: #3b5998
+  }
+
+  .social-icons a.twitter:hover {
+    background-color: #00aced
+  }
+
+  .social-icons a.linkedin:hover {
+    background-color: red
+  }
+
+  .social-icons a.dribbble:hover {
+    background-color: #ea4c89
+  }
+
+  @media (max-width:767px) {
+    .social-icons li.title {
+      display: block;
+      margin-right: 0;
+      font-weight: 600
+    }
+  }
+</style>
+
+<body style="background-color: #000000;">
+  <!--  Navbar  -->
+  <nav class="navbar navbar-expand-lg red ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="picture/theaterlogo-removebg-preview.png" height="50px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="home.html">
+              <i class="fa-solid fa-house"> Home</i></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ms-4" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-address-card"> About</i>
+            </a>
+            <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                <li><a class="dropdown-item" href="./reviews/review.html">Theater-Speak</a></li>
+                <li><a class="dropdown-item" href="audiotorim.html">Pakistan Auditorium  </a></li>
+                <li><a class="dropdown-item" href="audiotorim.html">USA Auditorium  </a></li>
+                <li><a class="dropdown-item" href="audiotorim.html">Indian Auditorium  </a></li>
+                
+            </ul>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link ms-4" href="awards.html"><i class="fa-solid fa-award"> Artists</i></a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ms-4" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-camera"> Shows</i>
+            </a>
+            <ul class="dropdown-menu text-center">
+              <li><a class="dropdown-item" href="english.html">English</a></li>
+              <li><a class="dropdown-item" href="urdu.html">Urdu</a></li>
+              <li><a class="dropdown-item" href="hindhi.html">Hindhi</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-4" href="contact.html"><i class="fa-solid fa-address-book"> Contact</i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-4" href="./LC-Lightbox-LITE-master/demo_lite.html"><i class="fa-brands fa-envira"> Gallery</i></a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <h1 class="mt-5 p-4" style=" color: white; font-weight: bold ; text-align: center;">Some Theater Actors</h1>
+  <hr style=" border: 5px solid #4E4E4E ; " class="mt-5">
+  
+  <!-- next -->
+  <div class="container py-5 mt-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
+        <div class="card" style="border: none; background-color: #4E4E4E; ">
+          <div class="card-body">
+            <h2 class="card-title text-center fw-bold" style="color: white;">Umer Sharif</h2>
+            <p class="card-text" style=" text-align: justify;">Mohammad Umer (19 April 1955 – 2 October 2021), known
+              professionally as Umer Shareef, was a Pakistani actor, comedian, director, producer, writer, singer and
+              television personality.
+
+              Umer began his career at the age of 14 with stand-up comedy and later worked in around 60 stage comedies
+              as well numerous television shows and films, where he not only acted but also directed and produced.</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <img src="picture/umersharif.jpg" class="img-fluid" style="border: 1px solid #4E4E4E;">
+      </div>
+    </div>
+  </div>
+  <hr style=" border: 5px solid #4E4E4E ; " class="mt-5">
+  
+  <!-- next -->
+  <div class="container py-5 mt-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 order-md-2 d-flex justify-content-center align-items-center">
+        <div class="card" style="border: none; background-color: #4E4E4E;  ">
+          <div class="card-body">
+            <h2 class="card-title text-center fw-bold" style="color: white;">Moin Akhter</h2>
+            <p class="card-text" style="text-align: justify;">Moin Akhter (also: "معین اختر" Moin Akhtar), (24 December
+              1950 – 22 April 2011) was a Pakistani television, film and stage artist, humorist, comedian, impersonator,
+              host, writer, singer, director and producer who rose to fame in the era of Radio Pakistan along with his
+              co-actors Anwar Maqsood and Bushra Ansari. He became an icon through his screen persona "Rozi" and is
+              considered to be a one-of-a-kind parodist and the king of Urdu comedy. His career spanned more than 45
+              years, from childhood in the Radio Pakistan era of modern film making until a year before his death in
+              2011.</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-lg-6 col-md-12 col-sm-12 order-md-1">
+        <img src="picture/MoinAkhter.jpg" class="img-fluid" style="border: 1px solid #4E4E4E;">
+      </div>
+    </div>
+  </div>
+  <hr style=" border: 5px solid #4E4E4E ; " class="mt-5">
+  
+  <!-- next -->
+  <div class="container py-5 mt-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
+        <div class="card" style="border: none; background-color: #4E4E4E; ">
+          <div class="card-body">
+            <h2 class="card-title text-center fw-bold" style="color: white;">Noel Cowards</h2>
+            <p class="card-text" style="text-align: justify;">Sir Noël Peirce Coward (16 December 1899 – 26 March 1973)
+              was an English playwright, composer, director, actor, and singer, known for his wit, flamboyance, and what
+              Time magazine called "a sense of personal style, a combination of cheek and chic, pose and poise".</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <img src="picture/images.jpg" class="img-fluid" style="border: 1px solid #4E4E4E;">
+      </div>
+    </div>
+  </div>
+  <hr style=" border: 5px solid #4E4E4E ; " class="mt-5">
+  
+  <!-- next -->
+  <div class="container py-5 mt-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12 order-md-2 d-flex justify-content-center align-items-center">
+        <div class="card" style="border: none; background-color: #4E4E4E;  ">
+          <div class="card-body">
+            <h2 class="card-title text-center fw-bold" style="color: white;">Herbert Arthur Chamberlayne Blythe</h2>
+            <p class="card-text" style="text-align: justify;">Herbert Arthur Chamberlayne Blythe (21 September 1849)-( 25 March 1905),known professionally by his stage name Maurice Barrymore, was an Indian-born British stage actor. He is the patriarch of the Barrymore acting family, father of John, Lionel and Ethel, and great-grandfather of actress Drew.</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-lg-6 col-md-12 col-sm-12 order-md-1">
+        <img src="picture/crop (1).jpg" class="img-fluid" style="border: 1px solid #4E4E4E;">
+      </div>
+    </div>
+  </div>
+  <hr style=" border: 5px solid #4E4E4E ; " class="mt-5">
+<!-- next -->
+<div class="container py-5 mt-5">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
+      <div class="card" style="border: none; background-color: #4E4E4E; ">
+        <div class="card-body">
+          <h2 class="card-title text-center fw-bold" style="color: white;">Manoj Bajpayee</h2>
+          <p class="card-text" style="text-align: justify;">Manoj Bajpayee (born 23 April 1965), also transliterated as Manoj Bajpai is an Indian actor who predominantly works in Hindi cinema and has also done Telugu and Tamil language films. Widely regarded as one of the finest actors of Hindi cinema or Bollywood, he is the recipient of three National Film Awards, six Filmfare Awards, and two Asia Pacific Screen Awards. In 2019, he was awarded India's fourth-highest civilian honour, the Padma Shri, for his contributions to art.
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <img src="picture/resize (1).jpg" class="img-fluid" style="border: 1px solid #4E4E4E;">
+    </div>
+  </div>
+</div>
+
+
+<hr style=" border: 5px solid #4E4E4E ; " class="mt-5">
+  
+<!-- next -->
+<div class="container py-5 mt-5">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12 order-md-2 d-flex justify-content-center align-items-center">
+      <div class="card" style="border: none; background-color: #4E4E4E;  ">
+        <div class="card-body">
+          <h2 class="card-title text-center fw-bold" style="color: white;">Irrfan Khan</h2>
+          <p class="card-text" style="text-align: justify;">Irrfan Khan (Hindustani pronunciation: [ɪrfaːn xaːn]) (born Sahabzade Irfan Ali Khan; 7 January 1967 – 29 April 2020), was an Indian actor who worked in Indian cinema as well as British and American films. Widely regarded as one of the finest actors in world cinema,Khan's career spanned over 30 years and earned him numerous accolades, including a National Film Award, an Asian Film Award, and six Filmfare Awards. In 2011, he was awarded the Padma Shri, India's fourth highest civilian honour.In 2021, he was posthumously awarded the Filmfare Lifetime Achievement Award.</p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="col-lg-6 col-md-12 col-sm-12 order-md-1">
+      <img src="picture/re (1).jpg" class="img-fluid" style="border: 1px solid #4E4E4E;">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Site footer -->
+  <footer class="site-footer mt-5 " style="border-top: 5px solid #4E4E4E ;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+            <a href="#" style="text-decoration: none; ">Theater</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a class="instagram" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a class="youtube" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

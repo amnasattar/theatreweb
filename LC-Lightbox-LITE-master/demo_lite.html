@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+<title>Gallery</title>
+<!--  -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!--  cdn font awesome  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+   integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- css file -->
+<link rel="stylesheet" href="../style.css">
+<!-- PAGE'S BASE CSS -->
+<style type="text/css">
+/* ! normalize.css v2.1.2 | MIT License | git.io/normalizearticle,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0} */
+
+
+
+body{font:14px/20px Arial,sans-serif;background-color:#4E5869;margin:0;padding:0;color:#000}dl,ol,ul{padding:0;margin:0}h1,h2,h3,h4,h5,h6,p{margin-top:0;padding-right:15px;padding-left:15px}a img{border:none}a:link{color:#414958;text-decoration:underline}a:visited{color:#4E5869;text-decoration:underline}a:active,a:focus,a:hover{text-decoration:none}.container{width:80%;max-width:1260px;min-width:335px;background-color:#FFF;margin:0 auto}.header{background-color:#fdfdfd;}.sidebar1{float:right;width:20%;background-color:#93A5C4;padding-bottom:10px}.content{padding:10px 0;width:100%;float:right;background-color:#efefef}.content ol,.content ul{padding:0 15px 15px 40px}ul.nav{list-style:none;border-top:1px solid #666;margin-bottom:15px}ul.nav li{border-bottom:1px solid #666}ul.nav a,ul.nav a:visited{padding:5px 5px 5px 15px;display:block;text-decoration:none;background-color:#8090AB;color:#000}ul.nav a:active,ul.nav a:focus,ul.nav a:hover{background-color:#6F7D94;color:#FFF}.fltrt{float:right;margin-left:8px}.fltlft{float:left;margin-right:8px}.clearfloat{clear:both;height:0;font-size:1px;line-height:0}.content,.sidebar1{min-height:500px}.content>div{margin:20px 15px}@media screen and (max-width:900px){.content>div{width:100%!important}}
+
+/* #logo {
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYlJREFUeNrcV4FtgzAQBJQB3AlCN0gmiNkgnaBhg25QMUHSCUInKJkgZgNGyAhskP6r58qJsCEUE5qXLMvI8t//359NGDhMytWepk3gz7LQ4VzSdAw8WxTc2WYd9ymlymQop5Td87/IQEVDR137AhAahPNlFZWvtpVgRgtmulcA5CO5BmFyQHou8wJjmm3YB0B9TwAp1fKJ5mcap7EB7Mh5/qNKJTv/GAuAQsSHq+/zMaQ4R6RfzGRqpwJrZvWbbwDaGeuEwLc1hmm6HNshS8BMTxG5aDkjxv5sSAAFIo07nsPR7/p0RuSI6vWGcwQ4UQwFQPaQ6FVDp0z/RTRJAMxovj75rbDsqP0pnmyVjYikIawjR1z/TgA5HaYguRXEqO29qCXa1Y6iiVuRZaNr3dQxrrUTfGg+j8wfBtwBJ+hBm8pxBj7hfNsAWpdncZm60grA5EOG/n5H+mIAEx2y8wtAl/XWLhCIiCW5pPECciZ9ROcvPyacuj3Y/Pg6MDqAzLOP3EZAtm8BBgDqc3bEpb6xyQAAAABJRU5ErkJggg==') no-repeat center center transparent;
+	background-size: contain;
+	width: 25px;
+	height: 25px;
+	display: inline-block;	
+	position: relative;
+	bottom: -4px;
+	left: -4px;
+} */
+
+.elem, .elem * {
+	box-sizing: border-box;
+	margin: 0 !important;	
+}
+.elem {
+	display: inline-block;
+	font-size: 0;
+	width: 33%;
+	border: 2px solid #4E4E4E;
+	border-bottom: none;
+	background: black;
+	padding: 10px;
+	height: auto;
+	background-clip: padding-box;
+}
+.elem > span {
+	display: block;
+	cursor: pointer;
+	height: 0;
+	padding-bottom:	70%;
+	background-size: cover;	
+	background-position: center center;
+}
+</style>
+
+
+
+
+
+
+<!-- LIGHTBOX FADING SHOW/HIDE EFFECT (as explained in documentation) -->
+<!-- <style type="text/css">
+.lcl_fade_oc.lcl_pre_show #lcl_overlay,
+.lcl_fade_oc.lcl_pre_show #lcl_window,
+.lcl_fade_oc.lcl_is_closing #lcl_overlay,
+.lcl_fade_oc.lcl_is_closing #lcl_window {
+	opacity: 0 !important;
+}
+.lcl_fade_oc.lcl_is_closing #lcl_overlay {
+	-webkit-transition-delay: .15s !important; 
+	transition-delay: .15s !important;
+}
+</style> -->
+
+
+
+
+
+
+<!-- //////////////////////////////////////////////// -->
+<!-- REQUIRED ELEMENTS -->
+
+<script src="lib/jquery.js" type="text/javascript"></script>
+
+<script src="js/lc_lightbox.lite.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/lc_lightbox.css" />
+
+
+<!-- SKINS -->
+<link rel="stylesheet" href="skins/minimal.css" />
+
+
+<!-- ASSETS -->
+<script src="lib/AlloyFinger/alloy_finger.min.js" type="text/javascript"></script>
+
+<!-- //////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////// -->
+
+</head>
+
+<body style="background-color: #000000;">
+<!--  Navbar  -->
+<nav class="navbar navbar-expand-lg  red ">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="../picture/theaterlogo-removebg-preview.png" height="50px"></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+			data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link active " aria-current="page" href="../home.html">
+						<i class="fa-solid fa-house"> Home</i></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle ms-4" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<i class="fa-solid fa-address-card"> About</i>
+					</a>
+					<ul class="dropdown-menu text-center">
+						<li><a class="dropdown-item" href="../about.html">About Us</a></li>
+						<li><a class="dropdown-item" href="../reviews/review.html">Theater-Speak</a></li>
+						<li><a class="dropdown-item" href="../audiotorim.html">Pakistan Auditorium  </a></li>
+						<li><a class="dropdown-item" href="../audiotorim2.html">USA Auditorium  </a></li>
+						<li><a class="dropdown-item" href="../audiotorim3.html">Indian Auditorium  </a></li>
+
+						<!-- <li><a class="dropdown-item" href="audiotorim.html">Indian Auditorium  </a></li> -->
+						
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link ms-4" href="../awards.html"><i class="fa-solid fa-award"> Artists</i></a>
+				</li>
+
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle ms-4" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<i class="fa-solid fa-camera"> Shows</i>
+					</a>
+					<ul class="dropdown-menu text-center">
+						<li><a class="dropdown-item" href="../english.html">English</a></li>
+						<li><a class="dropdown-item" href="../urdu.html">Urdu</a></li>
+						<li><a class="dropdown-item" href="../hindhi.html">Hindhi</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link ms-4" href="../contact.html"><i class="fa-solid fa-address-book">
+							Contact</i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link ms-4" href="demo_lite.html"><i class="fa-brands fa-envira"> Gallery</i></a>
+				</li>
+		</div>
+	</div>
+</nav>
+<!--  -->
+
+<div>
+<div class="container" style="background-color: #000000;" >
+    <div class="header" style="background-color:  #000000;" >
+          
+          <div style="text-align: center; color:white; padding: 40px 20px 25px; opacity: 0.9;"> 
+              <h1><span id="logo"></span> Theater</h1>
+              
+          </div>
+    </div>
+    
+    
+	<div class="content" style="background-color:#000000;">
+    <!-- href=anderki span=bhr ki -->
+   		<a class="elem" href="../picture/slider1.png">
+        	<span style="background-image: url(../picture/slider1.png);"></span>
+        </a>
+        <a class="elem" href="../picture/slider8.jfif">
+        	<span style="background-image: url(../picture/slider8.jfif);"></span>
+        </a>
+		<a class="elem" href="../picture/3800.png">
+        	<span style="background-image: url(../picture/3800.png);"></span>
+        </a>
+		<a class="elem" href="../picture/crop (1).jpg">
+        	<span style="background-image: url(../picture/crop\ \(1\).jpg);"></span>
+        </a>
+		<a class="elem" href="../picture/about.jpg">
+        	<span style="background-image: url(../picture/about.jpg);"></span>
+        </a>
+		<a class="elem" href="../picture/images.jpg">
+        	<span style="background-image: url(../picture/images.jpg);"></span>
+        </a>
+		<a class="elem" href="../picture/a1.jpg">
+        	<span style="background-image: url(../picture/a1.jpg);"></span>
+        </a>
+		<a class="elem" href="../picture/ind1jpg.jpg">
+        	<span style="background-image: url(../picture/ind1jpg.jpg);"></span>
+        </a>
+		<a class="elem" href="../picture/MoinAkhter.jpg">
+        	<span style="background-image: url(../picture/MoinAkhter.jpg);"></span>
+        </a>
+		<a class="elem" href="../picture/re (1).jpg">
+        	<span style="background-image: url(../picture/re\ \(1\).jpg);"></span>
+        </a>
+		<a class="elem" href="../picture/resize (1).jpg">
+        	<span style="background-image: url(../picture/resize\ \(1\).jpg);"></span>
+        </a>
+		<a class="elem" href="../picture/umersharif.jpg">
+        	<span style="background-image: url(../picture/umersharif.jpg);"></span>
+        </a>
+		<a class="elem" href="../picture/usa1.jpg">
+        	<span style="background-image: url(../picture/usa1.jpg);"></span>
+        </a>
+		<a class="elem" href="../picture/usa2.jpg">
+        	<span style="background-image: url(../picture/usa2.jpg);"></span>
+        </a>
+		<a class="elem" href="../picture/usa3.jpg">
+        	<span style="background-image: url(../picture/usa3.jpg);"></span>
+        </a>
+		<a class="elem" href="../picture/usa4.jpg">
+        	<span style="background-image: url(../picture/usa4.jpg);"></span>
+        </a>
+		<a class="elem" href="../shows/aeena (1).jpg">
+        	<span style="background-image: url(../shows/aeena\ \(1\).jpg);"></span>
+        </a>
+		<a class="elem" href="../shows/anjam (1).jpg">
+        	<span style="background-image: url(../shows/anjam\ \(1\).jpg);"></span>
+        </a>
+		<a class="elem" href="../shows/ansh (1).jpg">
+        	<span style="background-image: url(../shows/ansh\ \(1\).jpg);"></span>
+        </a>
+		<a class="elem" href="../shows/balu (1).jpg">
+        	<span style="background-image: url(../shows/balu\ \(1\).jpg);"></span>
+        </a>
+		<a class="elem" href="../shows/darkhat (1).jpg">
+        	<span style="background-image: url(../shows/darkhat\ \(1\).jpg);"></span>
+        </a>
+		<a class="elem" href="../shows/download (1).jpg">
+        	<span style="background-image: url(../shows/download\ \(1\).jpg);"></span>
+        </a>
+		<a class="elem" href="../shows/drama (1).jpg">
+        	<span style="background-image: url(../shows/drama\ \(1\).jpg);"></span>
+        </a>
+		<a class="elem" href="../shows/eng1.png">
+        	<span style="background-image: url(../shows/eng1.png);"></span>
+        </a>
+		<a class="elem" href="../shows/eng2.jpg">
+        	<span style="background-image: url(../shows/eng2.jpg);"></span>
+        </a>
+		<a class="elem" href="../shows/eng3.png">
+        	<span style="background-image: url(../shows/eng3.png);"></span>
+        </a>
+		<a class="elem" href="../shows/eng4.jpg">
+        	<span style="background-image: url(../shows/eng4.jpg);"></span>
+        </a>
+   		<br/><br/>
+   	</div>
+	   <footer class="site-footer mt-5  " style="border-top: 5px solid  #4E4E4E ;">
+		<div class="container" style="background: transparent;">
+		  <div class="row">
+			<div class="col-md-8 col-sm-6 col-xs-12">
+			  <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+		   <a href="#" style="text-decoration: none; ">Theater</a>.
+			  </p>
+			</div>
+	  
+			<div class="col-md-4 col-sm-6 col-xs-12">
+			  <ul class="social-icons">
+				<li><a class="facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook mt-2"></i></a></li>
+				<li><a class="twitter" href="https://twitter.com/"><i class="fa-brands fa-twitter mt-2"></i></a></li>
+				<li><a class="instagram" href="https://www.instagram.com/"><i class="fa-brands fa-instagram mt-2"></i></a></li>
+				<li><a class="youtube" href="https://www.youtube.com/"><i class="fa-brands fa-youtube mt-2"></i></a></li>
+			</ul>
+			</div>
+		  </div>
+		</div>
+		</footer>
+
+</div>
+
+</div>
+
+<!-- <footer class="site-footer mt-5  " style="border-top: 5px solid  #4E4E4E ;">
+	<div class="container">
+	  <div class="row">
+		<div class="col-md-8 col-sm-6 col-xs-12">
+		  <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+	   <a href="#" style="text-decoration: none; ">Theater</a>.
+		  </p>
+		</div>
+  
+		<div class="col-md-4 col-sm-6 col-xs-12">
+		  <ul class="social-icons">
+			<li><a class="facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+			<li><a class="twitter" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+			<li><a class="instagram" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+			<li><a class="youtube" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+		</ul>
+		</div>
+	  </div>
+	</div>
+	</footer> -->
+
+<!-- //////////////////////////////////////////////// -->
+<!-- LIGHTBOX INITIALIZATION -->
+<script type="text/javascript">
+$(document).ready(function(e) {
+   
+	// live handler
+	lc_lightbox('.elem', {
+		wrap_class: 'lcl_fade_oc',
+		gallery : true,	
+		thumb_attr: 'data-lcl-thumb', 
+		
+		skin: 'minimal',
+		radius: 0,
+		padding	: 0,
+		border_w: 0,
+	});	
+
+});
+</script>
+<!-- //////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////// -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

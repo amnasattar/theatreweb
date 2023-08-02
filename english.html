@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Theater </title>
+  <!-- Bootstrap link    -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!--  cdn font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css file -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<style>
+  .b{
+    border: 1px solid #4E4E4E;
+  }
+  .card{
+        transition: all 0.3s;
+    }
+    .card:hover{
+        transform: scale(1.1);
+    }
+</style>
+
+<body style="background-color: #000000;">
+  <script>
+    $(document).ready(function(){
+      $("#take").on('keyup',function(){
+        var value=$(this).val().toLowerCase();
+        $('.search').filter(function(){
+         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+  </script>
+  <!--  Navbar  -->
+  <nav class="navbar navbar-expand-lg red ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="picture/theaterlogo-removebg-preview.png" height="50px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="home.html">
+              <i class="fa-solid fa-house"> Home</i></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ms-4" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-address-card"> About</i>
+            </a>
+            <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                <li><a class="dropdown-item" href="./reviews/review.html">Theater-Speak</a></li>
+                <li><a class="dropdown-item" href="audiotorim.html">Pakistan Auditorium  </a></li>
+                <li><a class="dropdown-item" href="audiotorim.html">USA Auditorium  </a></li>
+                <li><a class="dropdown-item" href="audiotorim.html">Indian Auditorium  </a></li>
+                
+            </ul>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link ms-4" href="awards.html"><i class="fa-solid fa-award"> Artists</i></a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ms-4" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-camera"> Shows</i>
+            </a>
+            <ul class="dropdown-menu text-center">
+              <!-- <li><a class="dropdown-item" href="english.html">English</a></li> -->
+              <li><a class="dropdown-item" href="urdu.html">Urdu</a></li>
+              <li><a class="dropdown-item" href="hindhi.html">Hindhi</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-4" href="contact.html"><i class="fa-solid fa-address-book"> Contact</i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-4" href="./LC-Lightbox-LITE-master/demo_lite.html"><i class="fa-brands fa-envira"> Gallery</i></a>
+          </li>
+          <form class="d-flex ms-4" role="search">
+            <input class="form-control me-2 bg-light" id="take" type="search" placeholder="Search Me!">
+          </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--  cards     -->
+  <div class="container mt-5">
+    <nav style="--bs-breadcrumb-divider: '||';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a style="text-decoration: none; color: #ffffff; font-size:17px ;"
+            href="home.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page" style="color: #ffffff; font-size:17px ;">English-Shows
+        </li>
+      </ol>
+    </nav>
+    <div class="row mt-5">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+        <div class="card text-center search" style="background-color: transparent;">
+          <div class="card-body">
+            <img src="shows/eng1.png" class="mb-1 img-fluid b" style="border-radius: 5px;">
+            <h5 class="card-title text-center" style="color: #ffffff;">Robin Hood</h5>
+           
+            <a href="#" class="btn red"><i class="fas fa-play"></i><span style="color: white;"> Book
+                Now</span></a>
+          </div>
+        </div>
+
+      </div>
+      <!-- next cards  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+        <div class="card text-center search" style="background-color: transparent;">
+          <div class="card-body">
+            <img src="shows/eng2.jpg" class="mb-1 img-fluid b" style=" border-radius: 5px;">
+            <h5 class="card-title text-center" style="color: #ffffff;">The lion </h5>
+           
+            <a href="#" class="btn red"><i class="fas fa-play"></i><span style="color: white;"> Book
+                Now</span></a>
+          </div>
+        </div>
+
+      </div>
+      <!--  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+        <div class="card text-center search" style="background-color: transparent;">
+          <div class="card-body">
+            <img src="shows/eng3.png" class="mb-1 img-fluid b" style="border-radius: 5px;">
+            <h5 class="card-title text-center" style="color: #ffffff;">Back to the future</h5>
+           
+            <a href="#" class="btn red"><i class="fas fa-play"></i><span style="color: white;"> Book
+                Now</span></a>
+          </div>
+        </div>
+
+      </div>
+      <!--  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+        <div class="card text-center search" style="background-color: transparent;">
+          <div class="card-body">
+            <img src="shows/eng4.jpg" class="mb-1 img-fluid b" style="border-radius: 5px;">
+            <h5 class="card-title text-center " style="color: #ffffff;" >Rabbit Hole</h5>
+           
+            <a href="#" class="btn red"><i class="fas fa-play"></i><span style="color: white;"> Book
+                Now</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--  2nd row  -->
+    <div class="row mt-2">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+        <div class="card text-center search" style="background-color: transparent;">
+          <div class="card-body">
+            <img src="shows/eng9.png" class="mb-1 img-fluid b" style="border-radius: 5px;">
+            <h5 class="card-title text-center" style="color: #ffffff;">Jersey Boys</h5>
+           
+            <a href="#" class="btn red"><i class="fas fa-play"></i><span style="color: white;"> Book
+                Now</span></a>
+          </div>
+        </div>
+
+      </div>
+      <!--  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+        <div class="card text-center search" style="background-color: transparent;">
+          <div class="card-body">
+            <img src="shows/eng6.png" class="mb-1 img-fluid b" style="border-radius: 5px;">
+            <h5 class="card-title text-center " style="color: #ffffff;">Wicked</h5>
+           
+            <a href="#" class="btn red"><i class="fas fa-play"></i><span style="color: white;"> Book
+                Now</span></a>
+          </div>
+        </div>
+
+      </div>
+      <!--  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+        <div class="card text-center search" style="background-color: transparent;">
+          <div class="card-body">
+            <img src="shows/eng7.jpg" class="mb-1 img-fluid b" style="border-radius: 5px;">
+            <h5 class="card-title text-center" style="color: #ffffff;">Rabbit Hole</h5>
+           
+            <a href="#" class="btn red"><i class="fas fa-play"></i><span style="color: white;"> Book
+                Now</span></a>
+          </div>
+        </div>
+
+      </div>
+      <!--  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+        <div class="card text-center search" style="background-color: transparent;">
+          <div class="card-body">
+            <img src="shows/eng8.jpg" class="mb-1 img-fluid b" style="border-radius: 5px;">
+            <h5 class="card-title text-center" style="color: #ffffff;">Macbeth</h5>
+           
+            <a href="#" class="btn red"><i class="fas fa-play"></i><span style="color: white;"> Book
+                Now</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+<!--  -->
+  <hr class="mt-5" style=" border: 5px solid #4E4E4E ; ">
+
+  <!--  up coming      -->
+  <div class="container mt-5" id="coming">
+    <nav style="--bs-breadcrumb-divider: '||';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a style="text-decoration: none; color: #ffffff; font-size:17px ;"
+            href="home.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page" style="color: #ffffff; font-size:17px ;">Upcoming-Shows
+        </li>
+      </ol>
+    </nav>
+    <div class="row mt-5">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+        <div class="card text-center search" style="background-color: transparent;">
+          <div class="card-body">
+            <img src="upcoming/7549_36_WWRY_TodayTix_480x720.png" class="mb-1 img-fluid b" style="border-radius: 5px;">
+            <h5 class="card-title text-center" style="color: #ffffff;">We will Rock You</h5>
+           
+            <a href="#" class="btn red"><i class="fas fa-play"></i><span style="color: white;"> Coming Soon</span></a>
+          </div>
+        </div>
+
+      </div>
+      <!--  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+        <div class="card text-center search" style="background-color: transparent;">
+          <div class="card-body">
+            <img src="shows/header (1).jpg" class="b mb-1 img-fluid" style="border-radius: 5px;">
+            <h5 class="card-title text-center" style="color:white ;">Last Summer</h5>
+            <a href="#" class="btn red"><i class="fas fa-play"></i><span style="color: white;"> Coming Soon</span></a>
+          </div>
+        </div>
+
+      </div>
+      <!--  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+        <div class="card text-center search" style="background-color: transparent;">
+          <div class="card-body">
+            <img src="shows/download (1).jpg" class="b mb-1 img-fluid" style="border-radius: 5px;">
+            <h5 class="card-title text-center" style="color:white ;">Most Haunted</h5>
+            <a href="#" class="btn red"><i class="fas fa-play"></i><span style="color: white;"> Coming Soon</span></a>
+          </div>
+        </div>
+
+      </div>
+      <!--  -->
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+        <div class="card text-center search" style="background-color: transparent;">
+          <div class="card-body">
+            <img src="shows/HP21_Q2_041_TTG_Buttons_480x720 (1).png" class="b mb-1 img-fluid" style="border-radius: 5px;">
+            <h5 class="card-title text-center " style="color:white ;">Harry Porter</h5>
+            <a href="#" class="btn red"><i class="fas fa-play"></i><span style="color: white;"> Coming Soon</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+  <!-- Site footer -->
+  <footer class="site-footer mt-5 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+            <a href="#" style="text-decoration: none; ">Theater</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a class="instagram" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a class="youtube" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- js link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
